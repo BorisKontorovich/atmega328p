@@ -35,6 +35,12 @@ void timer2init(void) {
     OCR2A = 194; 
 }
 
+////////////////////////////////////////////////////////////////////////////////
+// IRSs will go into main.c since they include business logic.
+////////////////////////////////////////////////////////////////////////////////
+
+/*
+
 ISR (TIMER0_COMPA_vect) {
     PORTC ^= (1<<PC5);
 }
@@ -46,3 +52,5 @@ ISR (TIMER1_COMPA_vect) {
 ISR (TIMER2_COMPA_vect) {
     PORTC ^= (1<<PC5);
 }
+ 
+ */
