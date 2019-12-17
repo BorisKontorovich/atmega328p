@@ -21,7 +21,3 @@ uint8_t adcSingleExecute(void){
     while (ADCSRA & (1<<ADSC)) {} // Wait for adc to complete
     return ADCH;
 }
-
-void adcToString(uint8_t value, char *valueSting) {
-    itoa(value, valueSting, 10);
-}
